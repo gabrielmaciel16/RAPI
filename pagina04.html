@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAPI-FORMAÇÕES ANTIRRACISTAS</title>
+   <link rel="stylesheet" href="style04.css">
+    <link rel="stylesheet" href="busca.css">
+    <link rel="stylesheet" href="responsivo.css">
+   <link rel="icon" href="imagens-Rapi/favicon (1).ico" type="image/x-icon">
+   <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+</style>
+</head>
+<body>
+<div id="botoes" style="margin-bottom:20px;">
+        <h1 id="apresentação">BEM-VINDOS AO RAPI</h1>
+      <nav>
+        <!-- <h1>RAPI</h1> -->
+        <img src="imagens-Rapi/Imagem-Chico.png" alt="Logo Rapi">
+         <!-- Botôes de navegações -->
+        <a href="pagina01.html" class="nav-link"> INÍCIO</a>
+        <a href="pagina02.html" class="nav-link">QUEM SOMOS</a>
+        <a href="pagina03.html" class="nav-link">OBJETIVOS</a> 
+        <a href="pagina04.html" class="nav-link">FORMAÇÕES ANTIRRACISTAS</a>
+        <a href="pagina05.html" class="nav-link">REFERÊNCIAS</a>
+
+        <!-- Busca expansível -->
+        <div class="busca-container">
+            <button type="button" class="busca-btn" id="busca-btn" onclick="buscaExpandir()" aria-label="Abrir busca">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </button>
+            <form class="busca-form" id="busca-form" onsubmit="buscaSubmeter(event)">
+                <button type="submit" class="busca-icone-lupa" aria-label="Buscar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </button>
+                <input type="text" id="busca-input" placeholder="Buscar no site..." oninput="buscaAtualizarSugestoes()" autocomplete="off">
+                <button type="button" class="busca-fechar" onclick="buscaFechar()" aria-label="Fechar busca">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </form>
+            <div class="busca-sugestoes" id="busca-sugestoes"></div>
+        </div>
+      </nav>
+  </div>
+<!-- BOTÃO -->
+<button class="menu-btn" onclick="abrirMenu()">
+☰
+</button>
+<!-- CATEGORIAS -->
+<div class="menu" id="menu">
+    <a href="pagina07.html">Contextualização</a>
+    <a href="pagina03.html">Objetivos</a>
+    <a href="pagina04.html">Atividades</a>
+    <a href="pagina05.html">Referências</a>
+    <a href="pagina06.html">Valorização da Cultura</a>
+</div>
+<script>
+function abrirMenu(){
+    document.getElementById("menu").classList.toggle("ativo");
+}
+</script>
+</script>
+    </header>
+    <main>
+    <!-- Corpo do site -->
+        <h1 class="categoria">Atividades Antirracistas</h1>
+        <h2 class="sites"> Site Lunetas: </h2>
+        <a class="formacoes" target="_blank" href="https://lunetas.com.br/serie/serie-educacao-antirracista/">Clique Aqui</a>
+    <details class="detalhes"><p class="descricao"> A série Educação Antirracista, do portal Lunetas, reúne reportagens, entrevistas e materiais 
+        formativos que ajudam educadores a compreender e praticar uma pedagogia 
+        comprometida com o enfrentamento do racismo desde a infância. Com linguagem 
+        acessível e fundamentação sólida, o site aborda temas como identidade, 
+        representatividade, currículo, práticas escolares e o impacto do racismo estrutural no 
+        desenvolvimento das crianças. Cada conteúdo oferece reflexões, exemplos reais e 
+        caminhos concretos para transformar o cotidiano escolar em um espaço de equidade, 
+        acolhimento e valorização das infâncias negras. É um recurso essencial para quem deseja 
+        construir uma educação verdadeiramente plural, crítica e comprometida com a justiça 
+        racial.</p>
+    </details>
+        <h2 class="sites"> Site Unicef:</h2>
+         <a class="formacoes" target="_blank" href="https://www.unicef.org/brazil/pia#cartilha-bolso">Clique Aqui</a> 
+    <details class="detalhes"> 
+    <p class="descricao">A página do UNICEF dedicada à estratégia PIA – Primeira Infância Antirracista apresenta 
+    um conjunto robusto de materiais que apoiam profissionais da educação, saúde e 
+    assistência social na promoção do desenvolvimento pleno de crianças negras e indígenas 
+    desde os primeiros anos de vida. O site reúne cadernos setoriais, uma cartilha parental de 
+    bolso, vídeos, cards e uma websérie que explicam como o racismo impacta o 
+    desenvolvimento infantil e oferecem práticas concretas para enfrentá-lo no cotidiano. Com 
+    linguagem acessível e fundamentação técnica, os materiais orientam educadores e 
+    cuidadores a construir ambientes mais acolhedores, equitativos e sensíveis às 
+    especificidades étnico-raciais das crianças. É um recurso essencial para quem busca 
+    implementar ações antirracistas na primeira infância de forma intencional, informada e 
+    transformadora.
+</p>
+    </details>
+    <h1 class="categoria">Livros e Artigos</h1>
+     <h2 class="sites"> Site Porvir:</h2>
+         <a class="formacoes" target="_blank" href="https://porvir.org/10-materiais-gratuitos-educacao-antirracista/">Clique Aqui</a>
+    <details class="detalhes">      
+        <p class="descricao">O Porvir reúne, nesta página, uma curadoria de dez materiais gratuitos que  apoiam 
+            educadores na construção de práticas antirracistas dentro e fora da sala de aula. A seleção 
+            inclui guias, e-books, planos de aula, indicações de leitura e conteúdos formativos que 
+            ajudam a compreender o racismo estrutural, ampliar repertórios sobre culturas afro
+            brasileiras e indígenas e promover uma educação comprometida com a equidade racial. 
+            Cada recurso é apresentado de forma clara e acessível, facilitando o uso por professores, 
+            gestores e demais profissionais da educação que buscam fortalecer suas práticas 
+            pedagógicas com intencionalidade antirracista. É um ponto de partida valioso para quem 
+            deseja aprofundar estudos, renovar o currículo e ampliar o acesso a livros e materiais que 
+            valorizam a diversidade.
+        </p>    
+    </details>
+        <h2 class="sites"> Site Anansi:</h2>
+            <a class="formacoes" target="_blank" href="https://anansi.ceert.org.br/biblioteca">Clique Aqui</a>
+    <details class="detalhes">
+        <p class="descricao">A plataforma ANANSI - Observatório da Equidade Racial na Educação Básica, constitui-se 
+        em dispositivo tecnológico mediador das dimensões das relações humanas, permitindo 
+        ao CEERT avançar articulando políticas, projetos e práticas antirracistas e construtoras de 
+        equidade racial nos sistemas de ensino. O eixo Biblioteca é espaço virtual organizado a 
+        partir do acervo bibliográfico do CEERT para a sistematização e disponibilização de 
+        produções da literatura geral, acadêmica e publicada na imprensa escrita e virtual, 
+        relacionada ao tema da igualdade racial e da equidade na educação básica, em especial 
+        que aborde processos da Lei 10639/2003-11645/2008. Prevê monitoramento interativo 
+        com usuários e alimentação permanente do sistema mediante indicação de 
+        colaboradores, pesquisas realizadas e acordos de acessibilidade com principais meios 
+        especializados de divulgação acadêmica, científica e editorial. Mantém uma estrutura para 
+        facilitar acesso à leitura online e download de textos específicos em variados formatos.  
+        </p>
+    </details>
+    <h2 class="sites"> Site Geledés:</h2>
+        <a class="formacoes" target="_blank" href="https://www.geledes.org.br/">Clique Aqui</a>
+        <details class="detalhes">
+            <p class="descricao">
+                Geledés Instituto da Mulher Negra é uma organização da sociedade civil que se posiciona 
+                em defesa de mulheres e de pessoas negras em função do racismo e do sexismo vigentes 
+                na sociedade brasileira, que limitam o acesso aos direitos. Ao longo de nossa atuação, 
+                ampliamos nossos compromissos e posicionamentos também contra outras formas de 
+                discriminação e preconceito, que limitam a realização da plena cidadania, tais como: a 
+                lesbofobia, a homofobia, a transfobia, a bifobia, regionais, racismo religioso, à pessoa com 
+                deficiência, de opinião e de classe – o que integra os princípios norteadores da nossa 
+                agenda estratégica.  
+            </p>
+        </details>
+        <h1 class="categoria">Videos Acadêmicos e Pedagógicos</h1>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ds_nuc1Nkqo?si=4SiHTo5JOgX1Qmsf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             <p class="videos">Café Filosófico | Bell Hooks e a educação antirracista</p>
+        </div>
+        <div id="video2">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/M4anTW9AUrQ?si=bccfsdY7v_TzULsQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             <p class="videos">O menino que engoliu o choro – Curta-metragem completo </p>
+        </div> 
+        <div id="video3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KDF7dEORrKQ?si=y5Ty3Ji0P7MEmXhm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             <p class="videos">Meu nome é Maalum!</p>
+        </div>  
+        <div id="video4">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EbMvXiZq6HI?si=08GgDgUb3m6o8-BE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             <p class="videos">Amor de cabelo | Curta-metragem vencedor do Oscar |</p> 
+        </div>    
+        <div id="video5">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LZRtkbsZzH0?si=gHwd1XNqNkc_h4Xt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+             <p class="videos">Por Uma Educação Antirracista | Teaser oficial</p> 
+        </div>
+        <div id="video6">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lL1LDax45Jo?si=89fjloTeVrFW6dTn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p class="videos">Por uma educação antirracista: Lei 10.639/03</p>
+        </div>
+    </main>
+    <script src="busca.js"></script>
+</body>
+</html>

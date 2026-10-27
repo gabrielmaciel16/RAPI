@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAPI-CONTEXTUALIZAÇÃO</title>
+    <link rel="stylesheet" href="style07.css">
+    <link rel="stylesheet" href="busca.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <link rel="icon" href="imagens-Rapi/favicon (1).ico" type="image/x-icon">
+     <style> 
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style> 
+</head>
+<body>
+    <div id="botoes" style="margin-bottom:20px;">
+        <h1 id="apresentação">BEM-VINDOS AO RAPI</h1>
+      <nav>
+        <img id="Chico" src="imagens-Rapi/Imagem-Chico.png" alt="Logo Rapi">
+         <!-- Botôes de navegações -->
+        <a href="pagina01.html" class="nav-link">INÍCIO</a>
+        <a href="pagina02.html" class="nav-link">QUEM SOMOS</a>
+        <a href="pagina03.html" class="nav-link">OBJETIVOS</a> 
+        <a href="pagina04.html" class="nav-link">FORMAÇÕES ANTIRRACISTAS</a>
+        <a href="pagina05.html" class="nav-link">REFERÊNCIAS</a>
+      </nav>
+  </div>
+  
+    <!-- Busca expansível -->
+        <div class="busca-container">
+            <button type="button" class="busca-btn" id="busca-btn" onclick="buscaExpandir()" aria-label="Abrir busca">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </button>
+            <form class="busca-form" id="busca-form" onsubmit="buscaSubmeter(event)">
+                <button type="submit" class="busca-icone-lupa" aria-label="Buscar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </button>
+                <input type="text" id="busca-input" placeholder="Buscar no site..." oninput="buscaAtualizarSugestoes()" autocomplete="off">
+                <button type="button" class="busca-fechar" onclick="buscaFechar()" aria-label="Fechar busca">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </form>
+            <div class="busca-sugestoes" id="busca-sugestoes"></div>
+        </div>
+      </nav>
+  </div>
+<!-- BOTÃO -->
+<button class="menu-btn" onclick="abrirMenu()">
+☰
+</button>
+<!-- CATEGORIAS -->
+<div class="menu" id="menu">
+    <a href="pagina07.html">Contextualização</a>
+    <a href="pagina03.html">Objetivos</a>
+    <a href="pagina04.html">Atividades</a>
+    <a href="pagina05.html">Referências</a>
+    <a href="pagina06.html">Valorização da Cultura</a>
+</div>
+<script>
+function abrirMenu(){
+    document.getElementById("menu").classList.toggle("ativo");
+}
+</script>
+</script>
+    </header>
+    <main>
+    <!-- Corpo do site -->
+     <h2 class="Texto">O QUE É EDUCAÇÃO ANTIRRACISTA?</h2>
+<p>Educação antirracista é uma abordagem pedagógica que reconhece o racismo como um problema estrutural presente também na escola, e não apenas na sociedade fora dela. Ela propõe combater isso de forma intencional, atuando sobre o currículo, a formação de professores e o dia a dia da sala de aula. Não é um conteúdo pontual, mas uma postura permanente: desconstruir estereótipos, valorizar as histórias e culturas negras e indígenas, e garantir que todos os estudantes se reconheçam com dignidade no processo de aprendizagem.</p>
+<img src="imagens-Rapi/arte-original-por-david-amen-1.png" alt="arte original por David Amen" class="imagem">
+<p>No Brasil, essa proposta tem respaldo legal na Lei 10.639/2003 (ampliada pela Lei 11.645/2008), que torna obrigatório o ensino de história e cultura afro-brasileira e indígena na educação básica. Mais do que cumprir uma exigência normativa, a educação antirracista busca transformar a escola em um espaço de equidade racial, onde educadores e alunos desenvolvem um olhar crítico sobre as desigualdades históricas e constroem juntos práticas mais justas.</p>
+    </main>
+    <script src="busca.js"></script>
+</body>
+</html>

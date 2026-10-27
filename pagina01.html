@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style01.css">
+    <link rel="stylesheet" href="busca.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <link rel="icon" href="imagens-Rapi/favicon (1).ico" type="image/x-icon">
+    <title>RAPI-INICIO</title>
+<style> 
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+</style> 
+</head>
+<body>
+    <div id="botoes" style="margin-bottom:20px;">
+        <h1 id="apresentação">BEM-VINDOS AO RAPI</h1>
+      <nav>
+        <!-- <h1>RAPI</h1> -->
+        <img id="Chico" src="imagens-Rapi/Imagem-Chico.png" alt="Logo Rapi">
+         <!-- Botôes de navegações -->
+        <a href="pagina01.html" class="nav-link">INÍCIO</a>
+        <a href="pagina02.html" class="nav-link">QUEM SOMOS</a>
+        <a href="pagina03.html" class="nav-link">OBJETIVOS</a> 
+        <a href="pagina04.html" class="nav-link">FORMAÇÕES ANTIRRACISTAS</a>
+        <a href="pagina05.html" class="nav-link">REFERÊNCIAS</a>
+
+        <!-- Busca expansível -->
+        <div class="busca-container">
+            <button type="button" class="busca-btn" id="busca-btn" onclick="buscaExpandir()" aria-label="Abrir busca">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </button>
+            <form class="busca-form" id="busca-form" onsubmit="buscaSubmeter(event)">
+                <button type="submit" class="busca-icone-lupa" aria-label="Buscar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </button>
+                <input type="text" id="busca-input" placeholder="Buscar no site..." oninput="buscaAtualizarSugestoes()" autocomplete="off">
+                <button type="button" class="busca-fechar" onclick="buscaFechar()" aria-label="Fechar busca">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </form>
+            <div class="busca-sugestoes" id="busca-sugestoes"></div>
+        </div>
+      </nav>
+  </div>
+<!-- BOTÃO -->
+<button class="menu-btn" onclick="abrirMenu()">
+☰
+</button>
+<!-- CATEGORIAS -->
+<div class="menu" id="menu">
+    <a href="pagina07.html">Contextualização</a>
+    <a href="pagina03.html">Objetivos</a>
+    <a href="pagina04.html">Atividades</a>
+    <a href="pagina05.html">Referências</a>
+    <a href="pagina06.html">Valorização da Cultura</a>
+</div>
+<script>
+function abrirMenu(){
+    document.getElementById("menu").classList.toggle("ativo");
+}
+</script>
+</script>
+    </header>
+    <main>
+    <!-- Corpo do site -->
+<h2 class="Texto">O QUE É?</h2> 
+<p>Racismo é um sistema de opressão estruturante das sociedades. Por meio da criação de uma hierarquia entre os grupos raciais, estabelece privilégios políticos, econômicos, sociais e simbólicos para um grupo em prejuízo dos demais. Pode também ser definido como um sistema ideológico de hegemonia racial.
+</p>
+<h2 class="Texto">CONTEXTO HISTÓRICO</h2>
+<p>O racismo, como fenômeno social, emergiu de forma proeminente no final do século XV e início do século XVI, coincidindo com a exploração europeia e os consequentes encontros com diversas populações indígenas. Esse período testemunhou a invenção de hierarquias raciais que serviram para justificar a exploração e a desumanização desses grupos, particularmente sob a ótica do tráfico atlântico de escravos. O próprio conceito de raça é relativamente recente, evoluindo de identificadores geográficos anteriores para classificações baseadas na cor da pele e em características físicas, uma mudança que ganhou força no século XVII.</p>
+    </main>
+    <script src="busca.js"></script>
+</body>
+</html>

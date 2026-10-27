@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAPI-VALORIZAÇÃO DA CULTURA</title>
+    <link rel="stylesheet" href="style06.css">
+    <link rel="stylesheet" href="busca.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <link rel="icon" href="imagens-Rapi/favicon (1).ico" type="image/x-icon">
+    <style> 
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style> 
+</head>
+<body>
+  <div id="botoes" style="margin-bottom:20px;">
+        <h1 id="apresentação">BEM-VINDOS AO RAPI</h1>
+      <nav>
+        <!-- <h1>RAPI</h1> -->
+        <img id="Chico" src="imagens-Rapi/Imagem-Chico.png" alt="Logo Rapi">
+         <!-- Botôes de navegações -->
+        <a href="pagina01.html" class="nav-link">INÍCIO</a>
+        <a href="pagina02.html" class="nav-link">QUEM SOMOS</a>
+        <a href="pagina03.html" class="nav-link">OBJETIVOS</a> 
+        <a href="pagina04.html" class="nav-link">FORMAÇÕES ANTIRRACISTAS</a>
+        <a href="pagina05.html" class="nav-link">REFERÊNCIAS</a>
+
+        <!-- Busca expansível -->
+        <div class="busca-container">
+            <button type="button" class="busca-btn" id="busca-btn" onclick="buscaExpandir()" aria-label="Abrir busca">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </button>
+            <form class="busca-form" id="busca-form" onsubmit="buscaSubmeter(event)">
+                <button type="submit" class="busca-icone-lupa" aria-label="Buscar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </button>
+                <input type="text" id="busca-input" placeholder="Buscar no site..." oninput="buscaAtualizarSugestoes()" autocomplete="off">
+                <button type="button" class="busca-fechar" onclick="buscaFechar()" aria-label="Fechar busca">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </form>
+            <div class="busca-sugestoes" id="busca-sugestoes"></div>
+        </div>
+      </nav>
+  </div>
+<!-- BOTÃO -->
+<button class="menu-btn" onclick="abrirMenu()">
+☰
+</button>
+<!-- CATEGORIAS -->
+<div class="menu" id="menu">
+    <a href="pagina07.html">Contextualização</a>
+    <a href="pagina03.html">Objetivos</a>
+    <a href="pagina04.html">Atividades</a>
+    <a href="pagina05.html">Referências</a>
+    <a href="pagina06.html">Valorização da Cultura</a>
+</div>
+<script>
+function abrirMenu(){
+    document.getElementById("menu").classList.toggle("ativo");
+}
+</script>
+</script>
+    </header>
+    <main>
+    <!-- Corpo Do Site -->
+        <h2 class="Texto">Cultura Africana</h2>
+        <p>A cultura africana é um complexo e diversificado sistema de conhecimentos, crenças, valores e costumes, resultado de milênios de história e do desenvolvimento dos povos que habitam o continente africano. A África é considerada o berço da humanidade, com evidências arqueológicas apontando para o surgimento dos antepassados da espécie humana no continente há pelo menos 7 milhões de anos.
+        Existem na África cerca de 490 etnias diferentes, muitas delas convivendo dentro de um mesmo país. Devido à grande diversidade étnica e à vasta extensão territorial, a cultura africana não é homogênea, mas sim um mosaico de culturas distintas, cada uma com suas próprias características – tradições, línguas e práticas sociais.
+</p>
+<div id="FT-Cultura">
+    <img id="Culturas" src="https://s5.static.brasilescola.uol.com.br/be/2020/02/mascaras-africanas.jpg" alt="Culturas Africanas">
+</div>
+    <h2 id="Texto2">Diversidade Religiosa</h2>
+    <p>A cultura africana abrange uma ampla gama de práticas religiosas, incluindo religiões tradicionais africanas que enfatizam a veneração dos ancestrais, o culto a divindades naturais e o uso de rituais para se comunicar com o mundo espiritual. Elas se caracterizam pela transmissão oral, a crença em espíritos, a veneração aos mortos e o uso de feitiços e práticas de magia. <br>
+    Essas são religiões animistas, politeístas e panteístas, muito diferentes das religiões abraâmicas – cristianismo, islamismo e judaísmo –, que são seguidas por aproximadamente 90% da população africana. O islamismo é predominante na África do Norte. As religiões tradicionais são praticadas por cerca de 8% da população, conforme dados da World Christian Encyclopedia.    
+    </p>
+    <div id="FT-Cultura">
+    <img id="Culturas" src="https://s5.static.brasilescola.uol.com.br/be/2020/02/candomble.jpg" alt="candomblé">
+    </div>
+    <h2 id="Texto2">Conexão com a Natureza</h2>
+    <p>A culture africana promove uma comunhão profunda com a natureza, onde o mundo visível e o invisível estão interligados. A Terra é vista não apenas como um espaço a ser explorado, mas como uma entidade espiritual com a qual os seres humanos têm uma conexão cosmológica. Essa visão influencia a arte de viver dos africanos, que buscam se integrar à natureza e viver de maneira harmoniosa e equilibrada.</p>
+    <h2 id="Texto3">Tradição Oral</h2>
+    <p>A transmissão de conhecimento, histórias, lendas e ensinamentos ancestrais ocorre principalmente por meio da oralidade. Essa tradição oral é fundamental para a preservação da história e dos valores sociais das comunidades africanas.</p>
+    </main>
+    <script src="busca.js"></script>
+</body>
+</html>

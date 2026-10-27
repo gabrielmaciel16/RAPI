@@ -1,0 +1,181 @@
+#Chico{
+    width: 2.2cm;
+}
+#botoes{
+    background-color: rgb(169, 73, 25);
+    text-align: center;
+    height: 250px;
+    width: 100vmax;
+    padding-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.5);
+}
+body{
+    font-family: 'Bebas Neue', sans-serif;
+    background-image:url(imagens-Rapi/Antirracista.jpeg);
+    background-attachment: fixed;
+  background-size: cover;      /* Faz a imagem cobrir toda a tela */
+  background-position: center;
+} 
+.Texto{
+    font-size: 1.5cm;
+    background-color: #8c4303;
+    border-radius: 15px;
+    width: 12cm;
+    color: rgb(208, 207, 207);
+    padding: 10px;
+    box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.5);
+}
+img{
+     float: none;
+    width: 2.1cm; 
+}
+nav{
+    display: flex;
+}
+nav a{
+    width: 4cm;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 0.6cm;
+    text-align: center;
+}
+p{
+    margin-top: 1.1cm;
+    border-radius: 15px;
+    font-size: 0.75cm;
+    background-color: #8c4303;
+    padding: 20px;
+    box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.5);
+    width: 12cm;
+}
+a{
+background-color: #cbd5d0;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.4s ease, transform 0.2s ease;
+}
+nav > a:hover{
+    background-color: rgba(116, 55, 32);
+  transform: scale(1.25);    /* Opcional: aumenta o botão levemente em 5% */
+}
+#categorias{
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.658);
+    border-radius: 15px;
+    width: 1cm;
+     display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+  border: none;
+  cursor: pointer;
+}
+details{
+     display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+
+}
+#apresentação{
+ color: white
+}
+p{
+ color: rgb(208, 207, 207);
+     box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.3);
+}
+/* BOTÃO HAMBURGUER */
+ .menu-btn {
+    font-size:35px;
+    border:none;
+    border-radius:20px;
+    width: 70px;
+    height:70px;
+    cursor:pointer; 
+} 
+
+/* MENU ESCONDIDO */
+.menu{
+    display:none;
+    flex-direction:column;
+    gap: 3px;
+    position:absolute;
+    top: 390px;
+    left:20px;
+    width: 163px;
+    background-color: rgb(172, 89, 0);
+    border-radius: 15px;
+}
+
+/* BOTÕES DAS CATEGORIAS */
+.menu a:hover{
+    text-decoration:none;
+    background:white;
+    color:black;
+    padding:10px;
+    border-radius:15px;
+    font-size:25px;
+     transition: background-color 0.4s ease, transform 0.2s ease;
+}
+
+/* CLASSE QUE MOSTRA O MENU */
+.menu.ativo{
+    display:flex;
+}
+div > a:hover{
+      transform: scale(1.10);    /* Opcional: aumenta o botão levemente em 5% */
+}
+.Referencia{
+    background-color: #cbd5d0;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.4s ease, transform 0.2s ease;
+  margin-top: 100cm;
+}
+.Fotos{
+ width: 8cm;
+ border-radius: 15px;
+}
+.sitefoto{
+    width: 10cm;
+    border-radius: 15px;
+    margin-top: 1.5cm;
+}
+#Brasilfoto{
+    width: 18cm;
+}
+
+/* ================= RESPONSIVO (pagina05) ================= */
+@media (max-width: 768px){
+    .Texto{
+        width: 90%;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.1rem;
+    }
+    p{
+        width: 90%;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1rem;
+    }
+    .Fotos, .sitefoto, #Brasilfoto{
+        width: 90%;
+        max-width: 450px;
+        margin: 1rem auto;
+        display: block;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,91 @@
+/* =========================================================
+   RESPONSIVO.CSS
+   Regras gerais de responsividade, compartilhadas por todas
+   as páginas do site RAPI. Este arquivo é carregado DEPOIS
+   dos arquivos style0X.css e busca.css, então as regras daqui
+   têm prioridade quando repetem a mesma propriedade.
+   ========================================================= */
+
+/* Evita que qualquer elemento "estoure" a largura da tela */
+*{
+    box-sizing: border-box;
+}
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Classe usada nos links do menu (INÍCIO, QUEM SOMOS, etc.) */
+.nav-link{
+    color: #000;
+    margin: 0;
+}
+
+/* Deixa a nav quebrar linha em vez de espremer tudo numa linha só */
+nav{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    row-gap: 10px;
+}
+
+/* Imagens, de forma geral, nunca devem ultrapassar a largura do container */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* ================= TABLET E CELULAR (até 900px) ================= */
+@media (max-width: 900px){
+    #botoes{
+        height: auto;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    /* Esconde o menu completo de desktop e usa só o hambúrguer */
+    .nav-link{
+        display: none !important;
+    }
+
+    /* Mantém a busca visível e centralizada */
+    .busca-container{
+        margin: 10px auto 0 auto;
+    }
+
+    /* O menu sanduíche deixa de ser "absolute" com coordenadas fixas
+       de desktop e passa a fluir normalmente logo abaixo do botão */
+    .menu{
+        position: static;
+        width: 85%;
+        max-width: 320px;
+        margin: 10px auto 0 auto;
+        top: auto;
+        left: auto;
+    }
+
+    .menu-btn{
+        display: block;
+        margin: 10px auto 0 auto;
+    }
+}
+
+/* ================= CELULAR (até 480px) ================= */
+@media (max-width: 480px){
+    #apresentação{
+        font-size: 1.4rem;
+        padding: 0 10px;
+    }
+    #Chico{
+        width: 50px;
+    }
+    .busca-form.expandido{
+        width: 85vw;
+        max-width: 260px;
+    }
+    .busca-sugestoes{
+        width: 85vw;
+        max-width: 260px;
+    }
+}

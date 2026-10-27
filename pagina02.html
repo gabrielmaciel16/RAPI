@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style02.css">
+    <link rel="stylesheet" href="busca.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <link rel="icon" href="imagens-Rapi/favicon (1).ico" type="image/x-icon">
+    <title>RAPI-QUEM SOMOS</title>
+<style> 
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+</style>
+</head>
+<body>
+    <div id="botoes" style="margin-bottom:20px;">
+        <h1 id="apresentação">BEM-VINDOS AO RAPI</h1>
+      <nav>
+        <!-- <h1>RAPI</h1> -->
+        <img src="imagens-Rapi/Imagem-Chico.png" alt="Logo Rapi">
+         <!-- Botôes de navegações -->
+        <a href="pagina01.html" class="nav-link">INÍCIO</a>
+        <a href="pagina02.html" class="nav-link">QUEM SOMOS</a>
+        <a href="pagina03.html" class="nav-link">OBJETIVOS</a> 
+        <a href="pagina04.html" class="nav-link">FORMAÇÕES ANTIRRACISTAS</a>
+        <a href="pagina05.html" class="nav-link">REFERÊNCIAS</a>
+
+        <!-- Busca expansível -->
+        <div class="busca-container">
+            <button type="button" class="busca-btn" id="busca-btn" onclick="buscaExpandir()" aria-label="Abrir busca">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </button>
+            <form class="busca-form" id="busca-form" onsubmit="buscaSubmeter(event)">
+                <button type="submit" class="busca-icone-lupa" aria-label="Buscar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </button>
+                <input type="text" id="busca-input" placeholder="Buscar no site..." oninput="buscaAtualizarSugestoes()" autocomplete="off">
+                <button type="button" class="busca-fechar" onclick="buscaFechar()" aria-label="Fechar busca">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </form>
+            <div class="busca-sugestoes" id="busca-sugestoes"></div>
+        </div>
+      </nav>
+  </div>
+<!-- BOTÃO -->
+<button class="menu-btn" onclick="abrirMenu()">
+☰
+</button>
+<!-- CATEGORIAS -->
+<div class="menu" id="menu">
+    <a href="pagina07.html">Contextualização</a>
+    <a href="pagina03.html">Objetivos</a>
+    <a href="pagina04.html">Atividades</a>
+    <a href="pagina05.html">Referências</a>
+    <a href="pagina06.html">Valorização da Cultura</a>
+</div>
+<script>
+function abrirMenu(){
+    document.getElementById("menu").classList.toggle("ativo");
+}
+</script>
+</script>
+    </header>
+     <main>
+    <!-- Corpo do site -->
+    <p class="Texto"> Iniciamos o nosso projeto em 2025, com o título "educação antirrascita como forma de combate ao racismo institucional na educação básica", sendo atualizado em 2026 com o título "a influência de uma estratégia lúrdica na formação acadêmica de alunos e educadores sobre uma educação antirracista". 
+    </p>
+    <img id="Grupo" src="imagens-Rapi/Grupo-RAPI.jpeg" alt="Grupo RAPI">
+    <p class="Texto">nosso site por completo foi desenvolvido por alunos do curso de redes de computadores da escola  EEEP PRESIDENTE ROOSEVELT, com o intuito de fornecer informações e recursos sobre o racismo, suas causas, consequências e formas de combate. Acreditamos que a educação é uma ferramenta poderosa para promover a igualdade racial e combater a discriminação. Fomos premiados com o prêmio de melhor projeto da aréa técnica da escola.</p>
+    <main>
+    <script src="busca.js"></script>
+</body>
+</html>
